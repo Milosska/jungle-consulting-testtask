@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   currentQuery: string = '';
   errorMessage: string = '';
-  dataLength: number = 0;
+  dataLength: number = 1;
 }

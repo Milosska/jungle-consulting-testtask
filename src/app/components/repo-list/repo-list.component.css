@@ -9,7 +9,33 @@
 }
 
 .repo-list-item {
+  width: 100%;
+
   @media screen and (min-width: 1200px) {
     width: 500px;
+  }
+}
+
+.repo-list-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.repo-list-btn {
+  width: 120px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
   }
 }
