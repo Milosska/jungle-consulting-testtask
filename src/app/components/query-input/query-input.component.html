@@ -1,0 +1,32 @@
+<form
+  #queryForm="ngForm"
+  class="query-form"
+  (submit)="onQueryFormSubmit(queryForm.value)"
+>
+  <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+    {{ errorMessage }}
+  </div>
+
+  <div
+    *ngIf="!errorMessage && dataLength === 0"
+    class="alert alert-warning"
+    role="alert"
+  >
+    "No users with such username were found. Please, try other options."
+  </div>
+
+  <div
+    class="query-form-label"
+    [ngClass]="{ isError: errorMessage }"
+    [ngClass]="{ isWarning: !errorMessage && dataLength === 0 }"
+  >
+    <input
+      name="query"
+      type="text"
+      class="form-control"
+      placeholder="Find user"
+      ngModel
+    />
+    <button type="submit" class="btn btn-success query-form-btn">Search</button>
+  </div>
+</form>

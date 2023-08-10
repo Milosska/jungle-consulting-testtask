@@ -1,0 +1,48 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{ repo.name }}</h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  ></button>
+</div>
+<div class="modal-body">
+  <p>
+    <span class="fw-bold">Description:</span>
+    {{ repo.description || "No descripttion provided" }}
+  </p>
+  <p>
+    <span class="fw-bold">Language:</span>
+    {{ repo.language }}
+  </p>
+  <p>
+    <span class="fw-bold">Has issues:</span>
+    <i
+      *ngIf="repo.has_issues"
+      class="bi bi-check-square-fill text-success"
+      style="font-size: 22px; margin-left: 5px"
+    ></i>
+    <i
+      *ngIf="!repo.has_issues"
+      class="bi bi-x-square-fill text-danger"
+      style="font-size: 22px; margin-left: 5px"
+    ></i>
+  </p>
+</div>
+<div class="modal-footer">
+  <a
+    class="btn btn-outline-success modal-footer-link fw-bold"
+    href="{{ repo.html_url }}"
+    target="blank"
+    role="button"
+    >Go to repository</a
+  >
+  <button
+    type="button"
+    class="btn btn-outline-danger"
+    (click)="activeModal.close('Close click')"
+  >
+    Close
+  </button>
+</div>

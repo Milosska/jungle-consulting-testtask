@@ -1,0 +1,15 @@
+<ul class="user-list">
+  <li *ngFor="let user of users" (click)="handleCardClick(user.login)">
+    <div class="card" style="width: 18rem">
+      <img
+        src="{{ user.avatar_url }}"
+        class="card-img-top"
+        alt="{{ user.login }}"
+      />
+      <div class="card-body">
+        <h3 class="card-title">{{ user.login }}</h3>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </li>
+</ul>

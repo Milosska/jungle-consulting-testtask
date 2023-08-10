@@ -1,0 +1,12 @@
+<div class="home">
+  <app-query-input
+    (queryFormSubmit)="currentQuery = $event.query"
+    [errorMessage]="errorMessage"
+    [dataLength]="dataLength"
+  ></app-query-input>
+  <app-user-list
+    [query]="currentQuery"
+    (dataSet)="errorMessage = $event.errorMessage"
+    (dataSet)="dataLength = $event.dataLength"
+  ></app-user-list>
+</div>

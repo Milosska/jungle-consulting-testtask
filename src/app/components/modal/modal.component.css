@@ -1,0 +1,7 @@
+.modal-footer-link {
+  margin-right: auto;
+}
+
+.modal-body > p:not(:last-child) {
+  margin-bottom: 10px;
+}

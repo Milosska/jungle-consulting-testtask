@@ -1,0 +1,12 @@
+.repos {
+  padding: 0 20px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 40px;
+  }
+}
+
+.repos-title {
+  margin: 20px 0;
+  text-align: center;
+}

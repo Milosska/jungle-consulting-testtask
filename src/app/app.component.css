@@ -1,0 +1,17 @@
+.main {
+  position: relative;
+  min-height: 90vh;
+}
+
+.footer {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

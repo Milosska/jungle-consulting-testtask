@@ -1,0 +1,19 @@
+<ul class="repo-list">
+  <li *ngFor="let repo of repos" class="repo-list-item card">
+    <div
+      class="card-header text-bg-dark d-flex justify-content-between align-items-center"
+    >
+      <h3 class="text-light">{{ repo.name }}</h3>
+      <button
+        type="'button"
+        class="btn btn-success fw-bold"
+        (click)="openModal(repo)"
+      >
+        Details
+      </button>
+    </div>
+    <div class="card-body">
+      <p>{{ repo.description || "No description provided" }}</p>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,31 @@
+.query-form {
+  margin: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 20px 40px;
+  }
+}
+
+.query-form-label {
+  position: relative;
+  width: 100%;
+}
+
+.isError {
+  border: 2px solid #f1aeb5;
+  border-radius: 5px;
+}
+
+.isWarning {
+  border: 2px solid #fff3cd;
+  border-radius: 5px;
+}
+
+.query-form-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
