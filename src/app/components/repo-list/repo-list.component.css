@@ -32,10 +32,11 @@
 }
 
 .repo-list-btn {
-  width: 120px;
   margin: 0 auto;
+  width: 100px;
 
   @media screen and (min-width: 768px) {
     margin: 0;
+    width: 80px;
   }
 }
