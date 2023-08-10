@@ -28,7 +28,9 @@ export class RepoListComponent {
   }
 
   openModal(data: IRepo) {
-    const modalRef = this.modalService.open(ModalComponent);
+    const modalRef = this.modalService.open(ModalComponent, {
+      centered: true,
+    });
     modalRef.componentInstance.repo = data;
   }
 }
